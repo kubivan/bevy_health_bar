@@ -19,7 +19,7 @@ include = [
 ]
 
 [dependencies]
-bevy = { version = "0.19", default-features = false, features = [
+bevy = { version = "0.20", default-features = false, features = [
     "bevy_render",
 ] }
 ordered-float = "4.6.0"

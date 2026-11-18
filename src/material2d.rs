@@ -4,7 +4,7 @@ use bevy::render::render_resource::{
     AsBindGroup, RenderPipelineDescriptor, SpecializedMeshPipelineError,
 };
 use bevy::shader::ShaderRef;
-use bevy::sprite_render::{Material2d, Material2dKey};
+use bevy::sprite_render::{Material2d, Material2dKey, Material2dPipeline};
 
 use crate::constants::BAR_SHADER_2D_HANDLE;
 
@@ -54,6 +54,7 @@ impl Material2d for BarMaterial2d {
     }
 
     fn specialize(
+        _pipeline: &Material2dPipeline,
         descriptor: &mut RenderPipelineDescriptor,
         layout: &MeshVertexBufferLayoutRef,
         key: Material2dKey<Self>,
