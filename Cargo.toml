@@ -25,7 +25,7 @@ bevy = { version = "0.20", default-features = false, features = [
 ordered-float = "4.6.0"
 
 [dev-dependencies]
-bevy = "0.19"
+bevy = "0.20"
 bevy-inspector-egui = "0.36.0"
 bevy_tweening = "0.15.0"
 [features]

@@ -73,8 +73,8 @@ impl<T: Percentage + Component + TypePath> Plugin for HealthBarPlugin<T> {
                 load_internal_asset!(
                     app,
                     BAR_SHADER_2D_HANDLE,
-                    "../assets/shaders/bar2d.wgsl",
-                    Shader::from_wgsl
+                    "../assets/shaders/bar2d.wesl",
+                    Shader::from_wesl
                 );
             }
         }
